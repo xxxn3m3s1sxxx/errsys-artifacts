@@ -17,6 +17,9 @@ curl https://errsys-artifacts.github.io/.well-known/ai-catalog.json
 
 # MCP Server info
 curl https://errsys-artifacts.github.io/.well-known/mcp/server-card.json
+
+# Full UVC catalog (all videos, full metadata)
+curl https://errsys-artifacts.github.io/public/uvc-catalog.json
 ```
 
 ### Available Artifacts
@@ -24,6 +27,7 @@ curl https://errsys-artifacts.github.io/.well-known/mcp/server-card.json
 - **`/llms.txt`** — Video catalog for LLM agents
 - **`/.well-known/ai-catalog.json`** — Agent-SEO metadata
 - **`/.well-known/mcp/server-card.json`** — MCP Registry listing
+- **`/public/uvc-catalog.json`** — Full catalog (title/url/topic/tags/chapters/upload_date per video)
 - **`/public/wave.json`** — Deploy statistics (live)
 
 ## Repository Structure
@@ -34,6 +38,7 @@ curl https://errsys-artifacts.github.io/.well-known/mcp/server-card.json
 │   └── mcp/
 │       └── server-card.json     # MCP Registry listing
 ├── public/
+│   ├── uvc-catalog.json         # Full catalog (184 videos, full metadata)
 │   └── wave.json                # Deploy statistics
 ├── AGENTS.md                    # Guide for AI agents
 ├── llms.txt                     # Video catalog

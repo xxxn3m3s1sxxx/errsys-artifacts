@@ -12,6 +12,7 @@ All files are machine-readable and designed for AI agent discovery.
 | `/llms.txt` | Video catalog for LLM agents | Plain text |
 | `/.well-known/ai-catalog.json` | Agent-SEO metadata (Google/MS/HF standard) | JSON |
 | `/.well-known/mcp/server-card.json` | MCP Registry listing | JSON |
+| `/public/uvc-catalog.json` | Full catalog: title, url, topic, tags, chapters, upload_date | JSON |
 | `/public/wave.json` | Deploy statistics (live) | JSON |
 
 ### How to Use
