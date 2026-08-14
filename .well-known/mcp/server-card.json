@@ -1,0 +1,31 @@
+{
+  "$schema": "https://modelcontextprotocol.io/schemas/server-card.json",
+  "name": "ERR.SYS Video Pipeline",
+  "description": "YouTube content automation for AI/Dev topics: topic research, script generation, SEO optimization, and deploy tracking",
+  "version": "1.0.0",
+  "repository": "https://github.com/xxxn3m3s1sxxx/errsys-artifacts",
+  "endpoints": [],
+  "capabilities": {
+    "tools": true,
+    "resources": true,
+    "prompts": false
+  },
+  "skills": [
+    {
+      "name": "video-research",
+      "description": "Research trending AI/Dev topics for YouTube content"
+    },
+    {
+      "name": "script-generation",
+      "description": "Generate rant-style video scripts with 3-act structure"
+    },
+    {
+      "name": "seo-optimization",
+      "description": "Optimize video metadata, chapters, hashtags for YouTube SEO"
+    }
+  ],
+  "contact": {
+    "name": "ERR.SYS",
+    "url": "https://www.youtube.com/@err.sys"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "channel": "ERR.SYS",
+  "generated": "2026-08-14T12:00:00Z",
+  "stats": {
+    "total_deployed": 167,
+    "total_pending": 17,
+    "current_wave": "w35",
+    "topics_covered": 45
+  },
+  "waves": {
+    "w30": {"deployed": 4, "pending": 0},
+    "w31": {"deployed": 8, "pending": 2},
+    "w32": {"deployed": 1, "pending": 9},
+    "w34": {"deployed": 0, "pending": 6}
+  },
+  "recent_deploy": [
+    {"video_id": "YpaNebE3KJM", "topic": "tbd", "date": "2026-08-14"},
+    {"video_id": "BrmxR5e7wl0", "topic": "tbd", "date": "2026-08-14"},
+    {"video_id": "ZF_HaH1_uOg", "topic": "tbd", "date": "2026-08-14"}
+  ]
+}

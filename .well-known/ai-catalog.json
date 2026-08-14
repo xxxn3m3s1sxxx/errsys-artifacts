@@ -1,0 +1,34 @@
+{
+  "$schema": "https://ai-catalog.org/schemas/ai-catalog.json",
+  "name": "ERR.SYS",
+  "description": "AI/Dev rant-style YouTube channel: 167+ videos on coding, DevOps, cloud, and tech culture",
+  "url": "https://www.youtube.com/@err.sys",
+  "representativeQueries": [
+    "rust error handling best practices",
+    "docker desktop bill too expensive",
+    "npm windows slow performance",
+    "typescript build bloat fix",
+    "kubernetes crashloopbackoff debug",
+    "postgres vs mysql 2026",
+    "redis alternatives valkey",
+    "ai coding tools productivity",
+    "open source maintainer burnout",
+    "cloud bill optimization",
+    ".vscode alternatives 2026",
+    "linux kernel rust adoption",
+    "serverless cost optimization",
+    "mcp server setup guide",
+    "ai agent security risks"
+  ],
+  "contentTypes": [
+    "video",
+    "transcript",
+    "metadata"
+  ],
+  "languages": ["en", "de"],
+  "topics": [
+    "rust", "docker", "kubernetes", "typescript", "python", "node",
+    "postgres", "redis", "ai", "devops", "cloud", "open-source",
+    "coding-culture", "tech-rants", "software-engineering"
+  ]
+}

@@ -1,0 +1,16 @@
+# ERR.SYS Video Catalog
+# Machine-readable list of all videos for AI agents
+# Updated: 2026-08-14
+# Total: 167 videos deployed, 17 pending
+
+## Format
+# Each video entry has:
+# Title: <video title>
+# Topic: <topic-slug>
+# URL: https://www.youtube.com/watch?v=<video_id>
+# Tags: <comma-separated tags>
+# Language: en
+
+## Videos
+# Waiting for data from pipeline (wave.json + deployed.json)
+# Generator: generate_videos_ts.py → llms.txt
