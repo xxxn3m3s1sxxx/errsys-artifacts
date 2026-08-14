@@ -21,17 +21,19 @@ jobs:
 
       - name: Create or get KV namespace
         id: kv
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CF_DEPLOY_TOKEN }}
         run: |
           # Try to get existing namespace
-          KV_LIST=$(npx wrangler kv namespace list --api-token ${{ secrets.CF_DEPLOY_TOKEN }} 2>&1 || true)
+          KV_LIST=$(npx wrangler kv namespace list 2>&1 || true)
           KV_ID=$(echo "$KV_LIST" | python3 -c "import sys,json; ns=[n for n in json.load(sys.stdin) if n.get('title')=='LOGS']; print(ns[0]['id'] if ns else '')" 2>/dev/null || echo "")
           
           if [ -z "$KV_ID" ]; then
             echo "Creating new KV namespace..."
-            KV_ID=$(npx wrangler kv namespace create "LOGS" --api-token ${{ secrets.CF_DEPLOY_TOKEN }} 2>&1 | grep -oE '[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}' | head -1)
+            KV_ID=$(npx wrangler kv namespace create "LOGS" 2>&1 | grep -oE '[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}' | head -1)
             if [ -z "$KV_ID" ]; then
               echo "::error::Could not parse KV namespace ID from wrangler output"
-              npx wrangler kv namespace create "LOGS" --api-token ${{ secrets.CF_DEPLOY_TOKEN }} 2>&1 | head -20
+              npx wrangler kv namespace create "LOGS" 2>&1 | head -20
               exit 1
             fi
             echo "Created KV namespace: $KV_ID"
