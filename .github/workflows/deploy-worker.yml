@@ -13,6 +13,31 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Setup Wrangler
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CF_DEPLOY_TOKEN }}
+          command: --version
+
+      - name: Create or get KV namespace
+        id: kv
+        run: |
+          # Try to get existing namespace
+          KV_ID=$(npx wrangler kv namespace list --api-token ${{ secrets.CF_DEPLOY_TOKEN }} 2>/dev/null | python3 -c "import sys,json; ns=[n for n in json.load(sys.stdin) if n['title']=='LOGS']; print(ns[0]['id'] if ns else '')" 2>/dev/null || echo "")
+          
+          if [ -z "$KV_ID" ]; then
+            echo "Creating new KV namespace..."
+            KV_ID=$(npx wrangler kv namespace create "LOGS" --api-token ${{ secrets.CF_DEPLOY_TOKEN }} 2>&1 | grep -oP 'id = "\K[^"]+')
+            echo "Created KV namespace: $KV_ID"
+          else
+            echo "Using existing KV namespace: $KV_ID"
+          fi
+          
+          echo "KV_ID=$KV_ID" >> $GITHUB_OUTPUT
+          
+          # Update wrangler.toml with the real ID
+          sed -i "s/<KV_NAMESPACE_ID>/$KV_ID/" worker/wrangler.toml
+
       - name: Deploy Worker
         uses: cloudflare/wrangler-action@v3
         with:
