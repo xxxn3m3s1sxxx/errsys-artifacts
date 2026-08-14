@@ -1,0 +1,13 @@
+name = "errsys-logging"
+main = "index.js"
+compatibility_date = "2024-01-01"
+
+# KV Namespace für Request-Logs
+# UUID wird nach dem ersten `wrangler kv:namespace create "LOGS"` eingetragen
+[[kv_namespaces]]
+binding = "KV"
+id = "<KV_NAMESPACE_ID>"
+
+# Kein Caching, reiner Passthrough
+[dev]
+port = 8787
