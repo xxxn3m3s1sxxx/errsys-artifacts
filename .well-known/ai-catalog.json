@@ -2,23 +2,29 @@
   "$schema": "https://ai-catalog.org/schemas/ai-catalog.json",
   "name": "ERR.SYS",
   "description": "AI/Dev rant-style YouTube channel: 167+ videos on coding, DevOps, cloud, and tech culture",
-  "url": "https://www.youtube.com/@err.sys",
+  "url": "https://www.youtube.com/@0xRAGE.404",
+  "generated": "2026-08-14",
   "representativeQueries": [
-    "rust error handling best practices",
-    "docker desktop bill too expensive",
-    "npm windows slow performance",
-    "typescript build bloat fix",
-    "kubernetes crashloopbackoff debug",
-    "postgres vs mysql 2026",
-    "redis alternatives valkey",
-    "ai coding tools productivity",
-    "open source maintainer burnout",
-    "cloud bill optimization",
-    ".vscode alternatives 2026",
-    "linux kernel rust adoption",
-    "serverless cost optimization",
-    "mcp server setup guide",
-    "ai agent security risks"
+    "Code Ownership Is Stupid",
+    "Vercel Will Bill You For Every Pixel",
+    "AI Code Deployed to Prod",
+    "Microservices Roast Build Simple Things Properly",
+    "AI Code Never Gets Reviewed",
+    "Your CI Sabotages You",
+    "AI Policy Is Corporate Greed",
+    "Docker Won't Save You",
+    "Developer Burnout Is Your Fault",
+    "Your Next.js App Is A Hostage Situation",
+    "Agile Roast Your Code Is A Disgraceful Nightmare",
+    "Your Editor Knows Everything You Type",
+    "Docker Compose Is A Myth",
+    "Your Editor Sells Your Attention To Advertisers",
+    "LLM Users Are Ruining Hobby Programming",
+    "React Devs Can't Write CSS and It Shows",
+    "PyPI Typosquatting Is One Letter Away",
+    "Your 10k-Line Commit Proves Code Review Is a Joke",
+    "Your Server Components Doubled Your Payload",
+    "Serverless Is A Myth"
   ],
   "contentTypes": [
     "video",
@@ -27,8 +33,15 @@
   ],
   "languages": ["en", "de"],
   "topics": [
-    "rust", "docker", "kubernetes", "typescript", "python", "node",
-    "postgres", "redis", "ai", "devops", "cloud", "open-source",
-    "coding-culture", "tech-rants", "software-engineering"
+    "agile", "ai", "docker", "hustleculture", "legacycode",
+    "microservices", "promptengineer", "react", "serverless",
+    "worksonmymachine"
+  ],
+  "topByViews": [
+    {"query": "Code Ownership Is Stupid", "video_id": "HzqSWNm6P2s", "views": 1528, "retention": 68.4},
+    {"query": "Vercel Will Bill You For Every Pixel", "video_id": "0_c5w9EBp3U", "views": 1204, "retention": 37.5},
+    {"query": "AI Code Deployed to Prod", "video_id": "sAlCyZJDA0k", "views": 1184, "retention": 83.8},
+    {"query": "Microservices Roast", "video_id": "guKySfKBskU", "views": 1178, "retention": 31.5},
+    {"query": "AI Code Never Gets Reviewed", "video_id": "ZhMkqjnYTPA", "views": 1138, "retention": 54.8}
   ]
 }
