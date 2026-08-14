@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ERR.SYS Artifacts</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0a; color: #e0e0e0; padding: 2rem; max-width: 800px; margin: 0 auto; }
+        h1 { color: #ff4444; margin-bottom: 0.5rem; font-size: 2rem; }
+        .subtitle { color: #888; margin-bottom: 2rem; }
+        .section { margin-bottom: 2rem; }
+        .section h2 { color: #ff6666; font-size: 1.1rem; margin-bottom: 0.75rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+        a { color: #4da6ff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .card { background: #1a1a1a; border: 1px solid #333; border-radius: 8px; padding: 1rem; margin-bottom: 0.75rem; }
+        .card h3 { color: #fff; font-size: 1rem; margin-bottom: 0.5rem; }
+        .card p { color: #888; font-size: 0.9rem; }
+        .badge { display: inline-block; background: #ff4444; color: #fff; padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.75rem; margin-right: 0.5rem; }
+        code { background: #222; padding: 0.2rem 0.4rem; border-radius: 3px; font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+    <h1>ERR.SYS Artifacts</h1>
+    <p class="subtitle">Machine-readable content for AI agents</p>
+
+    <div class="section">
+        <h2>For AI Agents</h2>
+        <div class="card">
+            <h3><a href="/errsys-artifacts/llms.txt">Video Catalog</a></h3>
+            <p>167 videos with titles, URLs, tags, and dates. Machine-readable format for LLM discovery.</p>
+        </div>
+        <div class="card">
+            <h3><a href="/errsys-artifacts/.well-known/ai-catalog.json">AI Catalog</a></h3>
+            <p>Agent-SEO metadata with 20 representative queries from real analytics.</p>
+        </div>
+        <div class="card">
+            <h3><a href="/errsys-artifacts/.well-known/mcp/server-card.json">MCP Server Card</a></h3>
+            <p>MCP Registry listing for tool integration.</p>
+        </div>
+        <div class="card">
+            <h3><a href="/errsys-artifacts/public/wave.json">Wave Tracker</a></h3>
+            <p>Live deploy statistics: 168 total, 167 public, 16 pending.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Channel</h2>
+        <div class="card">
+            <h3><a href="https://www.youtube.com/@0xRAGE.404">YouTube: @0xRAGE.404</a></h3>
+            <p>Daily rage-bait tech shorts. AI, DevOps, cloud, and coding culture.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Quick Start</h2>
+        <p>Discover videos: <code>curl https://errsys-artifacts.github.io/errsys-artifacts/llms.txt</code></p>
+    </div>
+</body>
+</html>
